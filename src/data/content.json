@@ -1,0 +1,40 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "PM Modi Inaugurates Mega Solar Park in Gujarat",
+      "heading": "Renewable Energy Push",
+      "subheading": "India’s biggest solar initiative lights up 1 million homes",
+      "date": "2025-07-05",
+      "time": "10:00 AM",
+      "description": "Prime Minister Narendra Modi today inaugurated the largest solar park in India, located in Gujarat. The park is expected to power over a million homes and contribute significantly to India’s green energy goals.",
+      "image": "/images/solar-park.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Modi Addresses Nation on Independence Day",
+      "heading": "Independence Day 2025",
+      "subheading": "Emphasizes youth, digital growth, and national unity",
+      "date": "2025-08-15",
+      "time": "9:00 AM",
+      "description": "On the 78th Independence Day, PM Modi focused on youth empowerment, digital transformation, and India's mission to become a global leader by 2047. The speech was widely praised for its clarity and vision.",
+      "image": "/images/independence-day.jpg"
+    },
+    {
+      "id": 3,
+      "title": "India Hosts Historic G20 Summit Under Modi's Leadership",
+      "heading": "Global Diplomacy",
+      "subheading": "Landmark agreements signed at G20 New Delhi 2025",
+      "date": "2025-09-01",
+      "time": "4:30 PM",
+      "description": "The G20 Summit held in New Delhi was a major diplomatic success, with PM Modi facilitating key agreements on climate change, AI governance, and global trade restructuring.",
+      "image": "/images/g20.jpg"
+    }
+  ],
+  "footerLinks": [
+    { "title": "Contributors", "link": "/contributors" },
+    { "title": "Moderator Message", "link": "/moderator" },
+    { "title": "Subscribe", "link": "/subscribe" },
+    { "title": "Feedback", "link": "/feedback" }
+  ]
+}

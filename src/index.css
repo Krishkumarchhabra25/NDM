@@ -1,0 +1,13 @@
+@import "tailwindcss";
+/* global.css or app.css */
+h1 {
+  font-family: 'Playfair Display', serif;
+}
+
+p.subheading {
+  font-family: 'Lora', serif;
+}
+
+p.author {
+  font-family: 'Inter', sans-serif;
+}

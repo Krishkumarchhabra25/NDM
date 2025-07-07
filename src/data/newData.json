@@ -1,0 +1,57 @@
+{
+  "main": {
+    "title": "India Is Switching Gears",
+    "subheading": "Narendra Modi is propelling India toward new global influence.",
+    "image": "https://th-i.thgim.com/public/incoming/s4li5m/article65901826.ece/alternates/LANDSCAPE_1200/PTI09_10_2022_000168A.jpg"
+  },
+  "left": [
+    {
+      "title": "The Non-Exoneration of Diddy",
+      "author": "HELEN LEWIS",
+      "image": "https://cdn.theatlantic.com/thumbor/JYafOsnnpviegnswfQWafQ9M7ZI=/0x0:2000x1125/1952x1098/media/img/mt/2025/07/2025_07_diddy_2/original.jpg"
+    },
+    {
+      "title": "The AI Birthday Letter That Blew Me Away",
+      "author": "INDIA TECH",
+      "image": "https://cdn.theatlantic.com/thumbor/JYafOsnnpviegnswfQWafQ9M7ZI=/0x0:2000x1125/1952x1098/media/img/mt/2025/07/2025_07_diddy_2/original.jpg"
+    }
+  ],
+  "right": [
+    {
+      "title": "What Trump—And the U.S.—Can’t Understand About Air Strikes",
+      "author": "PHILLIPS PAYSON O’BRIEN",
+      "image": "https://cdn.theatlantic.com/thumbor/JYafOsnnpviegnswfQWafQ9M7ZI=/0x0:2000x1125/1952x1098/media/img/mt/2025/07/2025_07_diddy_2/original.jpg"
+    },
+    {
+      "title": "The ‘Dirty and Nasty People’ Who Became Americans",
+      "author": "LINDSAY CHERVINSKY",
+      "image": "https://cdn.theatlantic.com/thumbor/JYafOsnnpviegnswfQWafQ9M7ZI=/0x0:2000x1125/1952x1098/media/img/mt/2025/07/2025_07_diddy_2/original.jpg"
+    }
+  ],
+  "articles": [
+    { "title": "Article Title", "image": "https://cdn.theatlantic.com/thumbor/yKqzBPUABWfbouMpUCKSX6Qg7oE=/0x0:4000x2250/1952x1098/media/img/mt/2025/07/2025_06_BBBHouse/original.jpg" },
+    { "title": "Article Title", "image": "https://cdn.theatlantic.com/thumbor/yKqzBPUABWfbouMpUCKSX6Qg7oE=/0x0:4000x2250/1952x1098/media/img/mt/2025/07/2025_06_BBBHouse/original.jpg" },
+    { "title": "Article Title", "image": "https://cdn.theatlantic.com/thumbor/yKqzBPUABWfbouMpUCKSX6Qg7oE=/0x0:4000x2250/1952x1098/media/img/mt/2025/07/2025_06_BBBHouse/original.jpg" },
+    { "title": "Article Title", "image": "https://cdn.theatlantic.com/thumbor/yKqzBPUABWfbouMpUCKSX6Qg7oE=/0x0:4000x2250/1952x1098/media/img/mt/2025/07/2025_06_BBBHouse/original.jpg" },
+    { "title": "Article Title", "image": "https://cdn.theatlantic.com/thumbor/yKqzBPUABWfbouMpUCKSX6Qg7oE=/0x0:4000x2250/1952x1098/media/img/mt/2025/07/2025_06_BBBHouse/original.jpg" },
+    { "title": "Article Title", "image": "https://cdn.theatlantic.com/thumbor/yKqzBPUABWfbouMpUCKSX6Qg7oE=/0x0:4000x2250/1952x1098/media/img/mt/2025/07/2025_06_BBBHouse/original.jpg" },
+    { "title": "Article Title", "image": "https://cdn.theatlantic.com/thumbor/yKqzBPUABWfbouMpUCKSX6Qg7oE=/0x0:4000x2250/1952x1098/media/img/mt/2025/07/2025_06_BBBHouse/original.jpg" },
+    { "title": "Article Title", "image": "https://cdn.theatlantic.com/thumbor/yKqzBPUABWfbouMpUCKSX6Qg7oE=/0x0:4000x2250/1952x1098/media/img/mt/2025/07/2025_06_BBBHouse/original.jpg" },
+    { "title": "Article Title", "image": "https://cdn.theatlantic.com/thumbor/yKqzBPUABWfbouMpUCKSX6Qg7oE=/0x0:4000x2250/1952x1098/media/img/mt/2025/07/2025_06_BBBHouse/original.jpg" },
+    { "title": "Article Title", "image": "https://cdn.theatlantic.com/thumbor/yKqzBPUABWfbouMpUCKSX6Qg7oE=/0x0:4000x2250/1952x1098/media/img/mt/2025/07/2025_06_BBBHouse/original.jpg" },
+    { "title": "Article Title", "image": "https://cdn.theatlantic.com/thumbor/yKqzBPUABWfbouMpUCKSX6Qg7oE=/0x0:4000x2250/1952x1098/media/img/mt/2025/07/2025_06_BBBHouse/original.jpg" },
+    { "title": "Article Title", "image": "https://cdn.theatlantic.com/thumbor/yKqzBPUABWfbouMpUCKSX6Qg7oE=/0x0:4000x2250/1952x1098/media/img/mt/2025/07/2025_06_BBBHouse/original.jpg" }  
+  ],
+  "latest": [
+    "Breaking: Modi Announces New AI Policy",
+    "India Launches SpaceX-Style Rocket",
+    "Parliament Passes Landmark Bill",
+    "Monsoon Season Intensifies Across Nation"
+  ],
+  "mostRead": [
+    "The Rise of Indian Silicon Valley",
+    "Why the World Is Looking to India Now",
+    "Historic Mandate in Elections 2024",
+    "Inside Modi’s Vision for 2047"
+  ]
+}
