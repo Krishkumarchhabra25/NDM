@@ -1,4 +1,4 @@
-import  { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -16,17 +16,21 @@ const Header = () => {
           scrolled ? 'shadow-md py-2' : 'py-6'
         }`}
       >
-        <div className="w-full flex flex-col items-center relative px-4">
-          {/* Green bars and NaMo */}
-          <div className="flex items-center w-full">
-            {/* Left green bar */}
-            <div className="flex-grow h-5 bg-green-700" />
+        <div className="w-full flex flex-col items-center relative px-0">
+          {/* Green Bar Row with Subtitle inside */}
+          <div className="flex items-center w-full relative">
+            {/* Left green bar with subtitle */}
+            <div className="flex-grow h-10 bg-green-700 relative flex items-center justify-end pr-4">
+              <span className="text-white text-xs md:text-sm font-semibold tracking-wider">
+                Narendra Modi 
+              </span>
+            </div>
 
-            {/* NaMo title */}
+            {/* NaMo title overlapping in center */}
             <h1
-               className={`z-10 px-4 bg-white font-extrabold transition-all duration-300 ${
-    scrolled ? 'text-2xl md:text-4xl' : 'text-4xl md:text-6xl'
-  }`}
+              className={`z-10 px-4 bg-white font-extrabold transition-all duration-300 ${
+                scrolled ? 'text-2xl md:text-4xl' : 'text-4xl md:text-6xl'
+              }`}
               style={{
                 color: '#c65100', // Dark orange
                 fontFamily: `'Georgia', 'serif'`,
@@ -36,18 +40,17 @@ const Header = () => {
               NaMo
             </h1>
 
-            {/* Right green bar */}
-            <div className="flex-grow h-5 bg-green-700" />
+            {/* Right green bar with subtitle */}
+            <div className="flex-grow h-10 bg-green-700 relative flex items-center justify-start pl-4">
+              <span className="text-white text-xs md:text-sm font-semibold tracking-wider invisible md:visible">
+               The Karma Yogi
+              </span>
+            </div>
           </div>
-
-          {/* Subtitle */}
-          <p className="mt-2 text-sm font-semibold text-orange-600 tracking-wide">
-            Narendra Modi – The KarmaYogi
-          </p>
         </div>
       </header>
 
-      {/* Push content below the fixed header */}
+      {/* Spacer */}
       <div className={scrolled ? 'h-[72px]' : 'h-[120px]'} />
     </>
   );

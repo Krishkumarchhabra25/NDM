@@ -79,13 +79,117 @@ main: [
         "https://images.unsplash.com/photo-1546422904-90eab23c3d7e?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
   ],
-  articles: new Array(12).fill(0).map((_, i) => ({
-    title: `Top Article ${i + 1}`,
-    subheading: `This feature explores the timely issues and stories shaping Article ${i + 1} — a reflective and informative dive into emerging perspectives.`,
-    description: `An insightful look into topic ${i + 1}, highlighting fresh angles and ideas.`,
+articles: [
+  {
+    title: "How India's Villages Are Powering a Green Future",
+    subheading:
+      "Rural India is emerging as a surprise leader in renewable energy adoption, setting examples in community-led solar innovation, biomass utilization, and off-grid power independence.",
+    description:
+      "With small-scale solar plants and bio-energy systems, India’s villages are pushing the boundaries of what grassroots sustainability can look like, drawing global attention to rural-led energy transformation.",
     image:
       "https://cdn.theatlantic.com/thumbor/yKqzBPUABWfbouMpUCKSX6Qg7oE=/0x0:4000x2250/1952x1098/media/img/mt/2025/07/2025_06_BBBHouse/original.jpg",
-  })),
+  },
+  {
+    title: "The Quiet Revolution in India’s Startup Ecosystem",
+    subheading:
+      "Beyond Bengaluru and Mumbai, Tier-2 cities are spawning a wave of ambitious startups, rewriting the rules of innovation and tech development in India.",
+    description:
+      "Fuelled by digital penetration and government-backed incubators, cities like Indore, Surat, and Kochi are now on the global startup radar — and they’re just getting started.",
+    image:
+      "https://cdn.theatlantic.com/thumbor/yKqzBPUABWfbouMpUCKSX6Qg7oE=/0x0:4000x2250/1952x1098/media/img/mt/2025/07/2025_06_BBBHouse/original.jpg",
+  },
+  {
+    title: "Why India’s Youth Are Redefining Political Activism",
+    subheading:
+      "A new wave of politically engaged youth is using social media, grassroots organizing, and campus movements to challenge the status quo — and they’re being heard.",
+    description:
+      "From climate marches to digital protests, Gen Z Indians are demanding accountability and representation in unprecedented ways, reshaping India’s political landscape.",
+    image:
+      "https://cdn.theatlantic.com/thumbor/yKqzBPUABWfbouMpUCKSX6Qg7oE=/0x0:4000x2250/1952x1098/media/img/mt/2025/07/2025_06_BBBHouse/original.jpg",
+  },
+  {
+    title: "Inside the Mission to Make India a Semiconductor Hub",
+    subheading:
+      "As global supply chains shift, India is making a bold play to become a semiconductor manufacturing powerhouse, with multi-billion dollar investments and policy backing.",
+    description:
+      "With strategic MoUs and support from nations like Japan and the U.S., India’s chip dream could transform its tech and defense sectors in the next decade.",
+    image:
+      "https://cdn.theatlantic.com/thumbor/yKqzBPUABWfbouMpUCKSX6Qg7oE=/0x0:4000x2250/1952x1098/media/img/mt/2025/07/2025_06_BBBHouse/original.jpg",
+  },
+  {
+    title: "Can India Lead the Global South?",
+    subheading:
+      "Amid shifting geopolitical tides, India is increasingly positioning itself as the voice of the Global South — but does it have the influence and resources to lead?",
+    description:
+      "India’s G20 presidency, its strong partnerships with Africa, and non-alignment legacy offer both opportunity and challenge in steering a coalition of emerging economies.",
+    image:
+      "https://cdn.theatlantic.com/thumbor/yKqzBPUABWfbouMpUCKSX6Qg7oE=/0x0:4000x2250/1952x1098/media/img/mt/2025/07/2025_06_BBBHouse/original.jpg",
+  },
+  {
+    title: "The Race to Digitize India’s Education System",
+    subheading:
+      "EdTech giants, public institutions, and grassroots innovators are converging in a nationwide push to overhaul outdated education systems with new-age digital tools.",
+    description:
+      "Despite infrastructure gaps, India is witnessing a surge in personalized learning, regional language platforms, and AI-enabled tutoring — reshaping how 300 million students learn.",
+    image:
+      "https://cdn.theatlantic.com/thumbor/yKqzBPUABWfbouMpUCKSX6Qg7oE=/0x0:4000x2250/1952x1098/media/img/mt/2025/07/2025_06_BBBHouse/original.jpg",
+  },
+  {
+    title: "Reclaiming Indian History: The Archive Movement",
+    subheading:
+      "Digital historians and citizen archivists are leading a movement to preserve, digitize, and reinterpret India’s colonial, tribal, and regional narratives.",
+    description:
+      "In an age of misinformation and revisionism, the fight for preserving India’s diverse history has found new allies in open-source tech and crowdsourced archiving.",
+    image:
+      "https://cdn.theatlantic.com/thumbor/yKqzBPUABWfbouMpUCKSX6Qg7oE=/0x0:4000x2250/1952x1098/media/img/mt/2025/07/2025_06_BBBHouse/original.jpg",
+  },
+  {
+    title: "India’s Climate Strategy: Adapt, Innovate, Lead",
+    subheading:
+      "From hydrogen hubs to net-zero villages, India’s climate efforts are shifting from reactive disaster response to proactive global leadership.",
+    description:
+      "With rising temperatures and resource stress, India’s approach blends traditional wisdom with cutting-edge clean technologies, redefining what climate resilience looks like.",
+    image:
+      "https://cdn.theatlantic.com/thumbor/yKqzBPUABWfbouMpUCKSX6Qg7oE=/0x0:4000x2250/1952x1098/media/img/mt/2025/07/2025_06_BBBHouse/original.jpg",
+  },
+  {
+    title: "What the World Can Learn From India's UPI Boom",
+    subheading:
+      "The Unified Payments Interface has turned India into a fintech laboratory, setting benchmarks for the world on real-time payments and digital inclusion.",
+    description:
+      "India's cashless revolution is rewriting financial norms — from kirana stores to metro cities — offering a blueprint for digital public infrastructure globally.",
+    image:
+      "https://cdn.theatlantic.com/thumbor/yKqzBPUABWfbouMpUCKSX6Qg7oE=/0x0:4000x2250/1952x1098/media/img/mt/2025/07/2025_06_BBBHouse/original.jpg",
+  },
+  {
+    title: "How India Is Tackling the Mental Health Crisis",
+    subheading:
+      "With rising awareness, community-led helplines, and tech-driven therapy, India is breaking taboos around mental health — but challenges remain.",
+    description:
+      "Amid a surge in cases post-COVID, mental health in India is no longer a fringe issue. Policy, media, and youth activism are rewriting the narrative.",
+    image:
+      "https://cdn.theatlantic.com/thumbor/yKqzBPUABWfbouMpUCKSX6Qg7oE=/0x0:4000x2250/1952x1098/media/img/mt/2025/07/2025_06_BBBHouse/original.jpg",
+  },
+  {
+    title: "Is India Ready for the AI Age?",
+    subheading:
+      "The country is witnessing an AI gold rush — but balancing regulation, innovation, and ethics is a tightrope act with huge consequences.",
+    description:
+      "With the rise of deepfakes, job displacement concerns, and homegrown LLMs, India stands at a critical junction in how it embraces artificial intelligence.",
+    image:
+      "https://cdn.theatlantic.com/thumbor/yKqzBPUABWfbouMpUCKSX6Qg7oE=/0x0:4000x2250/1952x1098/media/img/mt/2025/07/2025_06_BBBHouse/original.jpg",
+  },
+  {
+    title: "The Women Driving India’s Space Program",
+    subheading:
+      "Behind every ISRO mission is a growing brigade of brilliant women scientists who are challenging stereotypes and pushing the boundaries of space exploration.",
+    description:
+      "From Chandrayaan to Gaganyaan, women engineers and physicists are increasingly taking lead roles, setting a new course for gender and STEM equality in India.",
+    image:
+      "https://cdn.theatlantic.com/thumbor/yKqzBPUABWfbouMpUCKSX6Qg7oE=/0x0:4000x2250/1952x1098/media/img/mt/2025/07/2025_06_BBBHouse/original.jpg",
+  },
+],
+
   latest: [
     {
       title: "Breaking: Modi Announces New AI Policy",
