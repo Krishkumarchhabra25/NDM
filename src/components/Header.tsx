@@ -21,33 +21,33 @@ const Header = () => {
           {/* Green Bar Row with Subtitle inside */}
           <div className="flex items-center w-full relative">
             {/* Left green bar with subtitle */}
-           <div className="w-1/2 h-10 bg-green-700 flex items-center justify-end pr-4">
-  <span className="text-white text-[9px] sm:text-xs md:text-sm font-semibold tracking-wider">
+<div className="w-1/2 h-10 bg-green-700 flex items-center justify-end pr-2 sm:pr-4">
+  <span className="text-white text-[10px] sm:text-xs md:text-sm font-semibold tracking-wider whitespace-nowrap truncate max-w-full">
     Narendra Modi
   </span>
 </div>
 
-            {/* NaMo title overlapping in center */}
-              <Link   to={`/`} >
-            <h1
-              className={`z-10 px-4 bg-white font-extrabold transition-all duration-300 ${
-                scrolled ? 'text-2xl md:text-4xl' : 'text-4xl md:text-6xl'
-              }`}
-              style={{
-                color: '#c65100', // Dark orange
-                fontFamily: `'Georgia', 'serif'`,
-                letterSpacing: '0.08em',
-              }}
-            >
-              NaMo
-            </h1>
+<Link to={`/`}>
+  <h1
+    className={`z-10 px-2 sm:px-4 bg-white font-extrabold transition-all duration-300 ${
+      scrolled ? 'text-2xl md:text-4xl' : 'text-4xl md:text-6xl'
+    }`}
+    style={{
+      color: '#c65100',
+      fontFamily: `'Georgia', 'serif'`,
+      letterSpacing: '0.08em',
+    }}
+  >
+    NaMo
+  </h1>
 </Link>
-            {/* Right green bar with subtitle */}
-           <div className="w-1/2 h-10 bg-green-700 flex items-center justify-start pl-4">
-  <span className="text-white text-[9px] sm:text-xs md:text-sm font-semibold tracking-wider">
+
+<div className="w-1/2 h-10 bg-green-700 flex items-center justify-start pl-2 sm:pl-4">
+  <span className="text-white text-[10px] sm:text-xs md:text-sm font-semibold tracking-wider whitespace-nowrap truncate max-w-full">
     The Karma Yogi
   </span>
 </div>
+
           </div>
         </div>
       </header>
