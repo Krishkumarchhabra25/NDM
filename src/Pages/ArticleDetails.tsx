@@ -19,7 +19,7 @@ const ArticleDetailPage = () => {
     <div className="font-serif bg-white text-gray-900">
       <Header />
 
-      <main className="mt-20 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+      <main className="mt-0 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         {/* Hero Image */}
         <div className="relative w-full aspect-[16/9] overflow-hidden rounded-xl shadow-md">
           <img
@@ -30,7 +30,7 @@ const ArticleDetailPage = () => {
         </div>
 
         {/* Headline Section */}
-        <section className="mt-8 space-y-4">
+        <section className="mt-3 space-y-4">
           <h1 className="text-3xl md:text-4xl font-bold leading-tight text-orange-800 font-heading">
             {article.title}
           </h1>
