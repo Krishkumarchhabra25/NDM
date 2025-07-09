@@ -44,7 +44,7 @@ const Header = () => {
 
 <div className="w-1/2 h-10 bg-green-700 flex items-center justify-start pl-2 sm:pl-4">
   <span className="text-white text-[10px] sm:text-xs md:text-sm font-semibold tracking-wider whitespace-nowrap truncate max-w-full">
-    The Karma Yogi
+    The KarmaYogi
   </span>
 </div>
 
