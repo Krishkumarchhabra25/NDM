@@ -1,20 +1,50 @@
 import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import type { AppDispatch, RootState } from "../redux/store";
+import {
+  subscribeUser,
+  resetSubscriberState,
+} from "../redux/SubscriberSlices";
+import toast from "react-hot-toast";
 
 const FooterSection = () => {
+  const dispatch = useDispatch<AppDispatch>();
+  const { loading } = useSelector(
+    (state: RootState) => state.subscriber
+  );
+
   const [showSubscribeModal, setShowSubscribeModal] = useState(false);
   const [showThankYou, setShowThankYou] = useState(false);
   const [showUploadModal, setShowUploadModal] = useState(false);
   const [showEmail, setShowEmail] = useState(false);
   const [email, setEmail] = useState("");
-const [name, setName] = useState(""); 
-  const handleSubscribe = () => {
-    if (!name.trim() || !email.trim()) return; // ✅ Validate both
-    setShowSubscribeModal(false);
-    setShowThankYou(true);
-    setEmail("");
-    setName(""); // ✅ Clear name too
-    setTimeout(() => setShowThankYou(false), 5000);
-  };
+  const [name, setName] = useState("");
+
+const handleSubscribe = () => {
+  if (!name.trim() || !email.trim()) return;
+
+  const errorToastId = "subscribe-error";
+
+  dispatch(subscribeUser({ name, email }))
+    .unwrap()
+    .then(() => {
+      setShowSubscribeModal(false);
+      setShowThankYou(true);
+      setName("");
+      setEmail("");
+
+      setTimeout(() => {
+        setShowThankYou(false);
+        dispatch(resetSubscriberState());
+      }, 4000);
+    })
+    .catch((err) => {
+      
+      toast.error(err, {
+        id: errorToastId, // 💡 prevents duplicate toasts
+      });
+    });
+};
 
   return (
     <>
@@ -28,7 +58,10 @@ const [name, setName] = useState("");
           </button>
           <button
             className="px-5 py-2 border border-white text-white rounded hover:bg-[#138808] transition cursor-pointer"
-            onClick={() => setShowSubscribeModal(true)}
+            onClick={() => {
+              console.log("Opening modal...");
+              setShowSubscribeModal(true);
+            }}
           >
             Subscribe
           </button>
@@ -66,7 +99,6 @@ const [name, setName] = useState("");
               <p className="text-sm text-gray-700 font-subheading text-center">
                 Stay informed with the latest stories and updates from across India.
               </p>
-              {/* ✅ Name input */}
               <input
                 type="text"
                 placeholder="Enter your name"
@@ -74,7 +106,6 @@ const [name, setName] = useState("");
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
-              
               <input
                 type="email"
                 placeholder="Enter your email"
@@ -83,10 +114,11 @@ const [name, setName] = useState("");
                 onChange={(e) => setEmail(e.target.value)}
               />
               <button
-                className="w-full bg-[#138808] text-white py-2 rounded font-author text-sm hover:bg-green-800 transition cursor-pointer"
+                className="w-full bg-[#138808] text-white py-2 rounded font-author text-sm hover:bg-green-800 transition cursor-pointer disabled:opacity-60"
                 onClick={handleSubscribe}
+                disabled={loading}
               >
-                Subscribe
+                {loading ? "Subscribing..." : "Subscribe"}
               </button>
               <button
                 className="text-xs text-gray-500 underline block mx-auto mt-2 cursor-pointer"
@@ -105,13 +137,13 @@ const [name, setName] = useState("");
         <div className="fixed inset-0 backdrop-blur-sm bg-black/30 flex justify-center items-center z-50">
           <div className="bg-white rounded-lg max-w-sm w-full p-6 shadow-xl text-center space-y-3 border border-green-600">
             <div className="h-2 w-full bg-[#FF9933] rounded-t-lg" />
-            <h3 className="text-lg font-semibold font-heading text-green-700">
-              Thank you for subscribing!
+            <h3 className="text-xl font-bold font-heading text-green-700">
+              🎉 Congratulations!
             </h3>
             <p className="text-sm font-subheading text-gray-700">
-              You’re now part of the India Articles community.
+              You’ve successfully subscribed to daily news updates.
               <br />
-              Get ready to receive powerful stories and positive updates daily.
+              Get ready for stories delivered straight to your inbox!
             </p>
             <div className="h-2 w-full bg-[#138808] rounded-b-lg" />
           </div>
@@ -149,7 +181,6 @@ const [name, setName] = useState("");
                 Please send your article to: <br />
                 <span className="font-semibold">submit@yourdomain.com</span>
               </p>
-              
             ) : (
               <button
                 className="w-full bg-[#FF9933] text-white py-2 rounded font-author text-sm hover:bg-[#138808] transition cursor-pointer"

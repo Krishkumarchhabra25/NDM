@@ -6,8 +6,19 @@ import ArticlesGrid from './components/ArticlesGrid';
 import VideoReels from './components/VideoReels';
 import LatestMostRead from './components/MostRead';
 import FooterSection from './components/FooterSection';
+import { useDispatch } from "react-redux"; // ✅ this line is required!
+import type { AppDispatch } from "./redux/store";
+import { useEffect } from 'react';
+import { getAllArticles } from './redux/ArticleSlice';
+import { getAllVideos } from './redux/VideoSlices';
 
 const App = () => {
+  const dispatch = useDispatch();
+
+useEffect(() => {
+  (dispatch as AppDispatch)(getAllArticles());
+  (dispatch as AppDispatch)(getAllVideos());
+}, [dispatch]);
   return (
     <div className="font-serif bg-white">
       <Header />
